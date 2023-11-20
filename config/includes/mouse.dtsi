@@ -1,0 +1,46 @@
+#include <dt-bindings/zmk/mouse.h>
+
+&mmv {
+  acceleration-exponent = <1>;      // 1
+  time-to-max-speed-ms = <1500>;    // 40
+  delay-ms = <0>;                   // 0
+};
+
+&mwh {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <5000>;    // 40
+  delay-ms = <0>;                   // 10
+};
+
+#define u_mouse_move_max 1250       // 600
+#define u_mouse_scroll_max 100      // 10
+
+#undef move_up
+#undef move_down
+#undef move_left
+#undef move_right
+#define move_up move_vert(-u_mouse_move_max)
+#define move_down move_vert(u_mouse_move_max)
+#define move_left move_hor(-u_mouse_move_max)
+#define move_right move_hor(u_mouse_move_max)
+
+#undef scroll_up
+#undef scroll_down
+#undef scroll_left
+#undef scroll_right
+#define scroll_up scroll_vert(u_mouse_scroll_max)
+#define scroll_down scroll_vert(-u_mouse_scroll_max)
+#define scroll_left scroll_hor(-u_mouse_scroll_max)
+#define scroll_right scroll_hor(u_mouse_scroll_max)
+
+#define u_btn1 &mkp mb1
+#define u_btn2 &mkp mb2
+#define u_btn3 &mkp mb3
+#define u_ms_u &mmv move_up
+#define u_ms_d &mmv move_down
+#define u_ms_l &mmv move_left
+#define u_ms_r &mmv move_right
+#define u_wh_u &mwh scroll_up
+#define u_wh_d &mwh scroll_down
+#define u_wh_l &mwh scroll_left
+#define u_wh_r &mwh scroll_right
