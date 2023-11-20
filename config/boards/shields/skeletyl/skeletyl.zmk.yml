@@ -1,0 +1,13 @@
+file_format: "1"
+id: skeletyl
+name: Skeletyl 
+type: shield
+url:
+requires:
+  - pro_micro
+exposes:
+features:
+  - keys
+siblings:
+  - skeletyl_left
+  - skeletyl_right
