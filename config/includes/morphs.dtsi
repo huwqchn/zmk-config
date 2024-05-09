@@ -41,6 +41,18 @@
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    shift_morph: home_r_shift_morph {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+
+        #ifdef HAS_CAPSLOCK
+            bindings = <&lt FN RSHFT>, <&caps_word_capslock>;
+        #else
+            bindings = <&sk FN RSHFT>, <&caps_word>;
+        #endif
+
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
     /*
       * Sticky shift + Caps Word
       *
@@ -65,6 +77,21 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
+    /*
+      * Shifted Backspace deletes
+      *
+      * Usage: &bspc_morph
+      * Tap: Backspace
+      * Shift-Tap: Delete
+      * Hold: switch num layer
+      */
+    bspc_morph: bspc_morph {
+        compatible = "zmk,behavior-mod-morph";
+        label = "BSPC_MORPH";
+        #binding-cells = <0>;
+        bindings = <&lt NUM BSPC>, <&kp DEL>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
     /*
       * Shifted comma types semicoln
       *
