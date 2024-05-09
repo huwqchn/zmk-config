@@ -41,18 +41,6 @@
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    shift_morph: home_r_shift_morph {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-
-        #ifdef HAS_CAPSLOCK
-            bindings = <&lt FN RSHFT>, <&caps_word_capslock>;
-        #else
-            bindings = <&sk FN RSHFT>, <&caps_word>;
-        #endif
-
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
     /*
       * Sticky shift + Caps Word
       *
