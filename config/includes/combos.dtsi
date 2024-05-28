@@ -46,35 +46,35 @@
       layers = <BASE>;
     };
 
-    // {
+    // [
     combo_lbkt {
       timeout-ms = <50>;
       key-positions = <RT1 RM1>;
-      bindings = <&kp LBRC>;
-      layers = <BASE>;
-    };
-
-    // }
-    combo_rbkt {
-      timeout-ms = <50>;
-      key-positions = <RT3 RM3>;
-      bindings = <&kp RBRC>;
-      layers = <BASE>;
-    };
-
-    // [
-    combo_lbrc {
-      timeout-ms = <50>;
-      key-positions = <RM1 RM2>;
       bindings = <&kp LBKT>;
       layers = <BASE>;
     };
 
     // ]
+    combo_rbkt {
+      timeout-ms = <50>;
+      key-positions = <RT2 RM2>;
+      bindings = <&kp RBKT>;
+      layers = <BASE>;
+    };
+
+    // {
+    combo_lbrc {
+      timeout-ms = <50>;
+      key-positions = <RT3 RM3>;
+      bindings = <&kp LBRC>;
+      layers = <BASE>;
+    };
+
+    // }
     combo_rbrc {
       timeout-ms = <50>;
-      key-positions = <RM2 RM3>;
-      bindings = <&kp RBKT>;
+      key-positions = <RT4 RM4>;
+      bindings = <&kp RBRC>;
       layers = <BASE>;
     };
 
