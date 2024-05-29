@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+LAYERS="Base Num Sym Fn Nav Adjust"
+
+draw() {
+	keymap -c img/config.yaml parse -z config/"$1".keymap >./img/"$1".yaml
+	keymap -c img/config.yaml draw --select-layers $LAYERS $2 ./img/"$1".yaml >./img/"$1".svg
+}
+
+draw corne "-k chocofi"
