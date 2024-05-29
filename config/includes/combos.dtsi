@@ -32,6 +32,7 @@
     //   layers = <BASE>;
     // };
 
+    // spc . sft
     combo_dot_spc {
       timeout-ms = <50>;
       key-positions = <LH1 RH1>;
@@ -39,17 +40,42 @@
       layers = <BASE>;
     };
 
+    // +
+    combo_plus {
+      timeout-ms = <50>;
+      key-positions = <LT2 LT1>;
+      bindings = <&kp PLUS>;
+      layers = <BASE>;
+    };
+
+    // -
+    combo_minus {
+      timeout-ms = <50>;
+      key-positions = <LT3 LT2>;
+      bindings = <&kp MINUS>;
+      layers = <BASE>;
+    };
+
+    // =
     combo_equal {
       timeout-ms = <50>;
-      key-positions = <RM0 RM1>;
+      key-positions = <LB2 LB1>;
       bindings = <&kp EQUAL>;
+      layers = <BASE>;
+    };
+
+    // _
+    combo_underscore {
+      timeout-ms = <50>;
+      key-positions = <LB3 LB2>;
+      bindings = <&kp UNDERSCORE>;
       layers = <BASE>;
     };
 
     // [
     combo_lbkt {
       timeout-ms = <50>;
-      key-positions = <RT1 RM1>;
+      key-positions = <RM1 RB1>;
       bindings = <&kp LBKT>;
       layers = <BASE>;
     };
@@ -57,7 +83,7 @@
     // ]
     combo_rbkt {
       timeout-ms = <50>;
-      key-positions = <RT2 RM2>;
+      key-positions = <RM2 RB2>;
       bindings = <&kp RBKT>;
       layers = <BASE>;
     };
@@ -65,7 +91,7 @@
     // {
     combo_lbrc {
       timeout-ms = <50>;
-      key-positions = <RT3 RM3>;
+      key-positions = <RM3 RB3>;
       bindings = <&kp LBRC>;
       layers = <BASE>;
     };
@@ -73,7 +99,7 @@
     // }
     combo_rbrc {
       timeout-ms = <50>;
-      key-positions = <RT4 RM4>;
+      key-positions = <RM4 RB4>;
       bindings = <&kp RBRC>;
       layers = <BASE>;
     };
