@@ -2,9 +2,11 @@
 
 I'm just getting started with split keyboards and ZMK
 
-## Credits
+## keymap drafts
 
 ![Keymap](img/corne.svg)
+
+## Credits
 
 - [urob](https://github.com/urob/zmk-config): timeless home row mods
 - [infused-kim](https://github.com/infused-kim/zmk-config)

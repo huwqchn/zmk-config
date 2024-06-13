@@ -1,264 +1,264 @@
-layout: { qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3 }
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
 layers:
-  Base:
-    - Q
-    - W
-    - F
-    - P
-    - B
-    - J
-    - L
-    - U
-    - Y
-    - "'"
-    - { t: A, h: ⌘ }
-    - { t: R, h: ⌥ }
-    - { t: S, h: ⌃ }
-    - { t: T, h: ⇧ }
-    - G
-    - M
-    - { t: N, h: ⇧ }
-    - { t: E, h: ⌃ }
-    - { t: I, h: ⌥ }
-    - { t: O, h: ⌘ }
-    - Z
-    - X
-    - C
-    - D
-    - V
-    - K
-    - H
-    - { t: ",", s: ; }
-    - { t: ., s: ":" }
-    - { t: "?", s: "!" }
-    - { t: ⎋, h: Adjust }
-    - { t: ⎵, h: Nav }
-    - ⇥
-    - { t: ⏎, h: Sym }
-    - { t: ⌫, h: Num }
-    - { t: ⌦, h: Fn }
-  Num:
-    - "`"
-    - "7"
-    - "8"
-    - "9"
-    - "@"
-    - "{"
-    - "}"
-    - "("
-    - ")"
-    - "%"
-    - "."
-    - "4"
-    - "5"
-    - "6"
-    - { t: "+", s: "-" }
-    - "#"
-    - ⇧
-    - { t: "[", h: ⌃ }
-    - { t: "]", h: ⌥ }
-    - ⌘
-    - |
-    - "1"
-    - "2"
-    - "3"
-    - "&"
-    - "*"
-    - "_"
-    - "<"
-    - ">"
-    - "/"
-    - ">"
-    - "0"
-    - "-"
-    - "="
-    - { t: " ", type: trans }
-    - { type: held }
-    - { t: " ", type: trans }
-  Sym:
-    - "~"
-    - "&"
-    - "*"
-    - "("
-    - ")"
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - "{"
-    - "$"
-    - "%"
-    - "^"
-    - "}"
-    - { t: " ", type: trans }
-    - ⇧
-    - ⌃
-    - ⌥
-    - ⌘
-    - \
-    - "!"
-    - "@"
-    - "#"
-    - "?"
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - "_"
-    - "["
-    - "]"
-    - { type: held }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-  Fn:
-    - F12
-    - F7
-    - F8
-    - F9
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - F11
-    - F4
-    - F5
-    - F6
-    - 🔒
-    - { t: " ", type: trans }
-    - ⇧
-    - ⌃
-    - ⌥
-    - ⌘
-    - F10
-    - F1
-    - F2
-    - F3
-    - ⏸️
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - 🖨️
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { type: held }
-  Nav:
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - ↩️
-    - ✂️
-    - 🔄
-    - 📄
-    - 📋
-    - ⌘
-    - ⌥
-    - ⌃
-    - ⇧
-    - { t: " ", type: trans }
-    - 🔠
-    - ←
-    - ↓
-    - ↑
-    - →
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - 
-    - ⇱
-    - ⇟
-    - ⇞
-    - ⇲
-    - { t: " ", type: trans }
-    - { type: held }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-  Adjust:
-    - 🔄
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - 🔌
-    - 🔅
-    - 🔆
-    - 🔄
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - 🔇
-    - 🔉
-    - 🔊
-    - { t: " ", type: trans }
-    - 💾
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - 🛜❌
-    - 🛜🔽
-    - 🛜🔼
-    - 💾
-    - { type: held }
-    - { t: " ", type: trans }
-    - { t: " ", type: trans }
-    - ⏯️
-    - ⏮️
-    - ⏭️
+  base:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: ⌘}
+  - {t: R, h: ⌥}
+  - {t: S, h: ⌃}
+  - {t: T, h: LSHIFT}
+  - G
+  - M
+  - {t: N, h: RSHIFT}
+  - {t: E, h: ⌃}
+  - {t: I, h: ⌥}
+  - {t: O, h: ⌘}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
+  - {t: ⎋, h: adjust, s: 🔠}
+  - {t: ⎵, h: nav}
+  - ⇥
+  - {t: ⏎, h: sym}
+  - {t: ⌫, h: num}
+  - {t: ⌦, h: fn}
+  num:
+  - '`'
+  - '7'
+  - '8'
+  - '9'
+  - '@'
+  - '{'
+  - '}'
+  - (
+  - )
+  - '%'
+  - .
+  - '4'
+  - '5'
+  - '6'
+  - {t: +, s: '-'}
+  - '#'
+  - {t: ⇧, h: sticky, s: 🔠}
+  - {t: '[', h: ⌃}
+  - {t: ']', h: ⌥}
+  - {t: ⌘, h: sticky}
+  - '|'
+  - '1'
+  - '2'
+  - '3'
+  - '&'
+  - '*'
+  - _
+  - <
+  - '>'
+  - /
+  - '0'
+  - '-'
+  - '='
+  - {t: ' ', type: trans}
+  - {type: held}
+  - {t: ' ', type: trans}
+  sym:
+  - '~'
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - '{'
+  - $
+  - '%'
+  - ^
+  - '}'
+  - {t: ' ', type: trans}
+  - {t: ⇧, h: sticky, s: 🔠}
+  - {t: ⌃, h: sticky}
+  - {t: ⌥, h: sticky}
+  - {t: ⌘, h: sticky}
+  - \
+  - '!'
+  - '@'
+  - '#'
+  - '?'
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - _
+  - '['
+  - ']'
+  - {type: held}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  fn:
+  - F12
+  - F7
+  - F8
+  - F9
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - {t: ' ', type: trans}
+  - {t: ⇧, h: sticky, s: 🔠}
+  - {t: ⌃, h: sticky}
+  - {t: ⌥, h: sticky}
+  - {t: ⌘, h: sticky}
+  - F10
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - 🖨️
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {type: held}
+  nav:
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - REDO
+  - CUT
+  - ↩️
+  - COPY
+  - PASTE
+  - {t: ⌘, h: sticky}
+  - {t: ⌥, h: sticky}
+  - {t: ⌃, h: sticky}
+  - {t: ⇧, h: sticky, s: 🔠}
+  - {t: ' ', type: trans}
+  - CAPS
+  - ←
+  - ↓
+  - ↑
+  - →
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - INS
+  - ⇱
+  - ⇟
+  - ⇞
+  - ⇲
+  - {t: ' ', type: trans}
+  - {type: held}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  adjust:
+  - 🔄
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - 🔌
+  - 🔅
+  - 🔆
+  - 🔄
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - 🔇
+  - 🔉
+  - 🔊
+  - {t: ' ', type: trans}
+  - 💾
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - 🛜❌
+  - 🛜🔽
+  - 🛜🔼
+  - 💾
+  - {type: held}
+  - {t: ' ', type: trans}
+  - {t: ' ', type: trans}
+  - ⏯️
+  - ⏮️
+  - ⏭️
 combos:
-  - p: [31, 34]
-    k: .⎵⇧
-    l: [Base]
-  - p: [2, 3]
-    k: "+"
-    l: [Base]
-  - p: [1, 2]
-    k: "-"
-    l: [Base]
-  - p: [22, 23]
-    k: "="
-    l: [Base]
-  - p: [21, 22]
-    k: "_"
-    l: [Base]
-  - p: [16, 26]
-    k: "["
-    l: [Base]
-  - p: [17, 27]
-    k: "]"
-    l: [Base]
-  - p: [18, 28]
-    k: "{"
-    l: [Base]
-  - p: [19, 29]
-    k: "}"
-    l: [Base]
-  - p: [6, 7]
-    k: (
-    l: [Base]
-  - p: [7, 8]
-    k: )
-    l: [Base]
-  - p: [26, 27]
-    k: <
-    l: [Base]
-  - p: [27, 28]
-    k: ">"
-    l: [Base]
+- p: [31, 34]
+  k: .⎵⇧
+  l: [base]
+- p: [2, 3]
+  k: +
+  l: [base]
+- p: [1, 2]
+  k: '-'
+  l: [base]
+- p: [22, 23]
+  k: '='
+  l: [base]
+- p: [21, 22]
+  k: _
+  l: [base]
+- p: [16, 26]
+  k: '['
+  l: [base]
+- p: [17, 27]
+  k: ']'
+  l: [base]
+- p: [18, 28]
+  k: '{'
+  l: [base]
+- p: [19, 29]
+  k: '}'
+  l: [base]
+- p: [6, 7]
+  k: (
+  l: [base]
+- p: [7, 8]
+  k: )
+  l: [base]
+- p: [26, 27]
+  k: <
+  l: [base]
+- p: [27, 28]
+  k: '>'
+  l: [base]

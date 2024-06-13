@@ -2,7 +2,7 @@
 
 set -e
 
-LAYERS="Base Num Sym Fn Nav Adjust"
+LAYERS="base num sym fn nav adjust"
 
 draw() {
 	keymap -c img/config.yaml parse -z config/"$1".keymap >./img/"$1".yaml
