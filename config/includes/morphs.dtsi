@@ -33,9 +33,17 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    r_shift_fn_lt: lt {
+    /*
+    * Sticky shift + Caps Word | hold: swith to fn layer
+    */
+    rsf: r_shift_fn_lt  {
+      compatible = "zmk,behavior-hold-tap";
+      label = "RIGHT_SHIFT_FN_LT";
       #binding-cells = <0>;
 
+      flavor = "balanced";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <200>;
       bindings = <&mo FN>, <&r_shift_morph>;
     };
     /*
