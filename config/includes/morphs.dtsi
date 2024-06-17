@@ -17,7 +17,7 @@
       */
     l_shift_morph: l_shift_morph {
       compatible = "zmk,behavior-mod-morph";
-      /* #binding-cells = <0>; */
+      #binding-cells = <0>;
 
       bindings = <&sk LSHFT>, <&caps_word>;
 
@@ -26,7 +26,7 @@
 
     r_shift_morph: r_shift_morph {
       compatible = "zmk,behavior-mod-morph";
-      /* #binding-cells = <0>; */
+      #binding-cells = <0>;
 
       bindings = <&sk RSHFT>, <&caps_word>;
 
@@ -38,6 +38,7 @@
     */
     smart_shift: smart_shift  {
       compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
 
       flavor = "balanced";
       tapping-term-ms = <200>;
