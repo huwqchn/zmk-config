@@ -93,7 +93,8 @@
       #endif
 
       mods = <(MOD_LSFT|MOD_RSFT)>;
-    }
+    };
+
     /*
       * Shifted comma types semicoln
       *
