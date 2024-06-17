@@ -34,12 +34,8 @@
     ignore-modifiers;          // allow chording sticky mods & layers
 };
 
-r_shift_fn_lt: r_shift_fn_lt {
-  compatible = "zmk,behavior-mod-tap";
+r_shift_fn_lt: lt {
   #binding-cells = <0>;
-  flavor = "balanced";
-  tapping-term-ms = <200>;    // 短按时间阈值
-  quick-tap-ms = <QUICK_TAP_MS>;   // 快速点击时间
 
   bindings = <&mo FN>, <&r_shift_morph>;
 };
