@@ -15,9 +15,8 @@
       *
       * Credits to urob for this genius combo.
       */
-    l_shift_morph: shift_morph {
+    l_shift_morph: l_shift_morph {
         compatible = "zmk,behavior-mod-morph";
-        label = "SHIFT_MORPH";
         #binding-cells = <0>;
 
         #ifdef HAS_CAPSLOCK
@@ -42,25 +41,20 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     /*
-      * Sticky shift + Caps Word
+      * Esc + Caps
       *
       * Usage: &esc_morph
-      * Tap: esc
-      * HMR-Shift-Tap: Caps Word
+      * Tap: Esc
+      * HMR-Shift-Tap: Caps
       * Hold: switch to adjust layer
       *
       * Credits to urob for this genius combo.
       */
     esc_morph: esc_morph {
         compatible = "zmk,behavior-mod-morph";
-        label = "ESC_MORPH";
         #binding-cells = <0>;
 
-        #ifdef HAS_CAPSLOCK
-            bindings = <&lt ADJUST ESC>, <&caps_word_capslock>;
-        #else
-            bindings = <&lt ADJUST ESC>, <&caps_word>;
-        #endif
+        bindings = <&lt ADJUST ESC>, <&kp CAPS>;
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
@@ -80,6 +74,26 @@
         bindings = <&lt NUM BSPC>, <&kp DEL>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+    /*
+      * Shifted comma types semicoln
+      *
+      * Usage: &comma_morph
+      * Tap: ,
+      * Shift-Tap: ;
+      */
+    shift_fn_morph: shift_fn_morph {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+
+      #ifdef HAS_CAPSLOCK
+          bindings = <&lt FN RSHFT>, <&caps_word_capslock>;
+      #else
+          bindings = <&lt FN RSHFT>, <&caps_word>;
+      #endif
+
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    }
     /*
       * Shifted comma types semicoln
       *
