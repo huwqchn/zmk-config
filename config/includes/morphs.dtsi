@@ -32,6 +32,12 @@
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+    r_shift_fn_lt: lt {
+      #binding-cells = <0>;
+
+      bindings = <&mo FN>, <&r_shift_morph>;
+    };
     /*
       * Esc + Caps
       *

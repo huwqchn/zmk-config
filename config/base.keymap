@@ -34,11 +34,6 @@
     ignore-modifiers;          // allow chording sticky mods & layers
 };
 
-r_shift_fn_lt: lt {
-  #binding-cells = <0>;
-
-  bindings = <&mo FN>, <&r_shift_morph>;
-};
 
 #include "keys/base.h"
 #include "includes/macros.dtsi"
