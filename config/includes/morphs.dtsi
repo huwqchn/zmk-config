@@ -16,21 +16,21 @@
       * Credits to urob for this genius combo.
       */
     l_shift_morph: l_shift_morph {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
+      compatible = "zmk,behavior-mod-morph";
+      /* #binding-cells = <0>; */
 
-        bindings = <&sk LSHFT>, <&caps_word>;
+      bindings = <&sk LSHFT>, <&caps_word>;
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     r_shift_morph: r_shift_morph {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
+      compatible = "zmk,behavior-mod-morph";
+      /* #binding-cells = <0>; */
 
-        bindings = <&sk RSHFT>, <&caps_word>;
+      bindings = <&sk RSHFT>, <&caps_word>;
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     /*
@@ -55,12 +55,12 @@
       * Credits to urob for this genius combo.
       */
     esc_morph: esc_morph {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
 
-        bindings = <&lt ADJUST ESC>, <&kp CAPS>;
+      bindings = <&lt ADJUST ESC>, <&kp CAPS>;
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     /*
@@ -72,11 +72,10 @@
       * Hold: switch num layer
       */
     bspc_morph: bspc_morph {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BSPC_MORPH";
-        #binding-cells = <0>;
-        bindings = <&lt NUM BSPC>, <&kp DEL>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+      compatible = "zmk,behavior-mod-morph";
+      bindings = <&lt NUM BSPC>, <&kp DEL>;
+      #binding-cells = <0>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
 
@@ -89,7 +88,6 @@
       */
     comma_morph: comma_morph {
       compatible = "zmk,behavior-mod-morph";
-      label = "COMMA_MORPH";
       #binding-cells = <0>;
       bindings = <&kp COMMA>, <&kp SEMI>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -103,7 +101,6 @@
       */
     dot_morph: dot_morph {
       compatible = "zmk,behavior-mod-morph";
-      label = "DOT_MORPH";
       #binding-cells = <0>;
       bindings = <&kp DOT>, <&kp COLON>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -117,7 +114,6 @@
       */
     qmark_morph: qmark_morph {
       compatible = "zmk,behavior-mod-morph";
-      label = "QMARK_MORPH";
       #binding-cells = <0>;
       bindings = <&kp QMARK>, <&kp EXCL>;
       mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -130,11 +126,10 @@
       * Shift-Tap: ^
       */
     plus_morph: plus_morph {
-        compatible = "zmk,behavior-mod-morph";
-        label = "PLUS_MORPH";
-        #binding-cells = <0>;
-        bindings = <&kp PLUS>, <&kp MINUS>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp PLUS>, <&kp MINUS>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
 };
