@@ -19,11 +19,7 @@
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
 
-        #ifdef HAS_CAPSLOCK
-            bindings = <&sk LSHFT>, <&caps_word_capslock>;
-        #else
-            bindings = <&sk LSHFT>, <&caps_word>;
-        #endif
+        bindings = <&sk LSHFT>, <&caps_word>;
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
@@ -32,11 +28,7 @@
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
 
-        #ifdef HAS_CAPSLOCK
-            bindings = <&sk RSHFT>, <&caps_word_capslock>;
-        #else
-            bindings = <&sk RSHFT>, <&caps_word>;
-        #endif
+        bindings = <&sk RSHFT>, <&caps_word>;
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
@@ -75,25 +67,6 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    /*
-      * Shifted comma types semicoln
-      *
-      * Usage: &comma_morph
-      * Tap: ,
-      * Shift-Tap: ;
-      */
-    shift_fn_morph: shift_fn_morph {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-
-      #ifdef HAS_CAPSLOCK
-          bindings = <&lt FN RSHFT>, <&caps_word_capslock>;
-      #else
-          bindings = <&lt FN RSHFT>, <&caps_word>;
-      #endif
-
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
 
     /*
       * Shifted comma types semicoln
