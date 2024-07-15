@@ -34,7 +34,7 @@
     };
 
     /*
-    * Sticky shift + Caps Word | hold: swith to fn layer
+    * Sticky shift + Caps Word | hold: switch to fn layer
     */
     smart_shift: smart_shift  {
       compatible = "zmk,behavior-hold-tap";
