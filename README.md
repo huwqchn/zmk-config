@@ -6,6 +6,14 @@ I'm just getting started with split keyboards and ZMK
 
 ![Keymap](img/corne.svg)
 
+## My keyboard show
+
+![I](.assets/cygnus_1.jpg)
+
+![II](.assets/cygnus_2.jpg)
+
+![III](.assets/cygnus_3.jpg)
+
 ## Credits
 
 - [urob](https://github.com/urob/zmk-config): timeless home row mods
