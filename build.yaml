@@ -33,6 +33,8 @@ include:
   - board: nice_nano_v2
     shield: cygnus_peripheral_right
     artifact-name: cygnus_peripheral_right
-  - board: "le_chiff_ble"
   - board: nice_nano_v2
+    shield: settings_reset
+  - board: le_chiff_ble
+  - board: le_chiff_ble
     shield: settings_reset
