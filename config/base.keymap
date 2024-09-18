@@ -35,7 +35,7 @@
     ignore-modifiers;          // allow chording sticky mods & layers
 };
 
-#define SWITCH &kp LC(LA(LC(GRAVE))) // switch input method
+#define SWITCH &kp LC(LA(LS(GRAVE))) // switch input method
 
 #include "keys/base.h"
 #include "includes/macros.dtsi"
