@@ -42,11 +42,11 @@
 &leader {
   timeout-ms = <650>;  // leader key timeout
   timerless;
-}
+};
 
 &cap_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
-}
+};
 
 // Alt+Tab swapper, requires PR #1366
 ZMK_TRI_STATE(swap,
