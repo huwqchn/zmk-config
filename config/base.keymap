@@ -1,7 +1,11 @@
 #include <behaviors.dtsi>
+#include <behaviors/num_word.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/unicode-chars/greek.dtsi"
 
 #define BASE 0
 #define NUM 1
@@ -35,7 +39,20 @@
     ignore-modifiers;          // allow chording sticky mods & layers
 };
 
-#define SWITCH &kp LC(LA(LS(GRAVE))) // switch input method
+&leader {
+  timeout-ms = <650>;  // leader key timeout
+  timerless;
+}
+
+&cap_word {
+  continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+}
+
+// Alt+Tab swapper, requires PR #1366
+ZMK_TRI_STATE(swap,
+    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+    ignored-key-positions = <LT2>;
+)
 
 #include "keys/base.h"
 #include "includes/macros.dtsi"
@@ -111,11 +128,11 @@
       label = "Nav";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-          _LTX    ___           ___           ___           ___           ___                      &kp K_REDO    &kp K_CUT     &kp K_UNDO    &kp K_COPY    &kp K_PASTE      _RTX
+          _LTX    ___           ___           ___           &swap         ___                      &kp K_REDO    &kp K_CUT     &kp K_UNDO    &kp K_COPY    &kp K_PASTE      _RTX
       //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
           _LMX    &sk LGUI      &sk LALT      &sk LCTRL    &l_shift_morph ___                      &kp CAPS      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT        _RMX
       //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-          _LBX    ___           ___           ___           SWITCH        ___              _MBX    &kp INS       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END          _RBX
+          _LBX    ___           ___           ___           ___           ___              _MBX    &kp INS       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END          _RBX
       //├──────┤ ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯ ├──────┤
           _LHX                                ___           ___           ___                      ___           ___           ___                                          _RHX
       //╰──────╯                             ╰─────────────┴─────────────┴─────────────╯          ╰─────────────┴─────────────┴─────────────╯                             ╰──────╯

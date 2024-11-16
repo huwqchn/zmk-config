@@ -7,134 +7,85 @@
   ╰───────────╮ 30  31  32 │ 33  34  35 ╭───────────╯ ╰───────────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────────╯
               ╰────────────┴────────────╯                         ╰─────────────┴─────────────╯             */
 
-/ {
-  combos {
-    compatible = "zmk,combos";
+#define COMBO_TERM 50
 
-   //combo_caps_word {
-   //  timeout-ms = <50>;
-   //  key-positions = <LM1 RM1>;
-   //  bindings = <&caps_word>;
-   //  layers = <BASE>;
-   //};
-
-    // combo_reset {
-    //   timeout-ms = <50>;
-    //   key-positions = <LT0 RT0>;
-    //   bindings = <&sys_reset>;
-    //   layers = <BASE>;
-    // };
-    //
-    // combo_boot {
-    //   timeout-ms = <50>;
-    //   key-positions = <LB0 RB0>;
-    //   bindings = <&bootloader>;
-    //   layers = <BASE>;
-    // };
-
-    // spc . sft
-    combo_dot_spc {
-      timeout-ms = <50>;
-      key-positions = <LH1 RH1>;
-      bindings = <&dot_spc>;
-      layers = <BASE>;
+#define COMBO(NAME, TIMEOUT, KEYS, BINDINGS, LAYERS) \
+    combo_##NAME { \
+        timeout-ms = <TIMEOUT>; \
+        key-positions = <KEYS>; \
+        bindings = <BINDINGS>; \
+        layers = <LAYERS>; \
     };
+combos {
+  compatible = "zmk,combos";
 
-    // +
-    combo_plus {
-      timeout-ms = <50>;
-      key-positions = <LT2 LT1>;
-      bindings = <&kp PLUS>;
-      layers = <BASE>;
-    };
+  // esc
+  COMBO(esc, COMBO_TERM, LT4 LT3, &kp ESC, BASE)
 
-    // -
-    combo_minus {
-      timeout-ms = <50>;
-      key-positions = <LT3 LT2>;
-      bindings = <&kp MINUS>;
-      layers = <BASE>;
-    };
+  // leader
+  COMBO(leader, COMBO_TERM, LM2 LM1, &leader, BASE MOUSE)
 
-    // =
-    combo_equal {
-      timeout-ms = <50>;
-      key-positions = <LB2 LB1>;
-      bindings = <&kp EQUAL>;
-      layers = <BASE>;
-    };
+  // macro dot spc
+  COMBO(dot_spc, COMBO_TERM, LH1 RH1, &dot_spc, BASE)
 
-    // _
-    combo_underscore {
-      timeout-ms = <50>;
-      key-positions = <LB3 LB2>;
-      bindings = <&kp UNDERSCORE>;
-      layers = <BASE>;
-    };
+  // +
+  COMBO(plus, COMBO_TERM, LT2 LT1, &kp PLUS, BASE)
 
-    // [
-    combo_lbkt {
-      timeout-ms = <50>;
-      key-positions = <RM1 RB1>;
-      bindings = <&kp LBKT>;
-      layers = <BASE>;
-    };
+  // -
+  COMBO(minus, COMBO_TERM, LT3 LT2, &kp MINUS, BASE)
 
-    // ]
-    combo_rbkt {
-      timeout-ms = <50>;
-      key-positions = <RM2 RB2>;
-      bindings = <&kp RBKT>;
-      layers = <BASE>;
-    };
+  // =
+  COMBO(equal, COMBO_TERM, LB2 LB1, &kp EQUAL, BASE)
 
-    // {
-    combo_lbrc {
-      timeout-ms = <50>;
-      key-positions = <RM3 RB3>;
-      bindings = <&kp LBRC>;
-      layers = <BASE>;
-    };
+  // _
+  COMBO(underscore, COMBO_TERM, LB3 LB2, &kp UNDERSCORE, BASE)
 
-    // }
-    combo_rbrc {
-      timeout-ms = <50>;
-      key-positions = <RM4 RB4>;
-      bindings = <&kp RBRC>;
-      layers = <BASE>;
-    };
+  // [
+  COMBO(lbkt, COMBO_TERM, RM1 RB1, &kp LBKT, BASE)
 
-    // (
-    combo_lpar {
-      timeout-ms = <50>;
-      key-positions = <RT1 RT2>;
-      bindings = <&kp LPAR>;
-      layers = <BASE>;
-    };
+  // ]
+  COMBO(rbkt, COMBO_TERM, RM2 RB2, &kp RBKT, BASE)
 
-    // )
-    combo_rpar {
-      timeout-ms = <50>;
-      key-positions = <RT2 RT3>;
-      bindings = <&kp RPAR>;
-      layers = <BASE>;
-    };
+  // {
+  COMBO(lbrc, COMBO_TERM, RM3 RB3, &kp LBRC, BASE)
 
-    // <
-    combo_lt {
-      timeout-ms = <50>;
-      key-positions = <RB1 RB2>;
-      bindings = <&kp LT>;
-      layers = <BASE>;
-    };
+  // }
+  COMBO(lbrc, COMBO_TERM, RM4 RB3, &kp LBRC, BASE)
 
-    // >
-    combo_gt {
-      timeout-ms = <50>;
-      key-positions = <RB2 RB3>;
-      bindings = <&kp GT>;
-      layers = <BASE>;
-    };
+  // (
+  COMBO(lpar, COMBO_TERM, RT1 RT2, &kp LPAR, BASE)
 
-  };
+  // )
+  COMBO(rpar, COMBO_TERM, RT2 RT3, &kp RPAR, BASE)
+
+  // <
+  COMBO(lt, COMBO_TERM, RB1 RB2, &kp LT, BASE)
+
+  // >
+  COMBO(gt, COMBO_TERM, RB2 RB3, &kp GT, BASE)
+
+  // @
+  COMBO(AT, COMBO_TERM, LT3 LM3, &kp AT, BASE)
+
+  // #
+  COMBO(HASH, COMBO_TERM, LT2 LM2, &kp HASH, BASE)
+
+  // $
+  COMBO(DOLLAR, COMBO_TERM, LT1 LM1, &kp DOLLAR, BASE)
+
+  // %
+  COMBO(PERCENT, COMBO_TERM, LT0 LM0, &kp PERCENT, BASE)
+
+  // !
+  COMBO(EXCLAMATION, COMBO_TERM, RT0 RM0, &kp EXCLAMATION, BASE)
+
+  // ^
+  COMBO(CARET, COMBO_TERM, RT1 RM1, &kp CARET, BASE)
+
+  // &
+  COMBO(AMP, COMBO_TERM, RT2 RM2, &kp AMP, BASE)
+
+  // *
+  COMBO(ASTERISK, COMBO_TERM, RT3 RM3, &kp ASTERISK, BASE)
+
 };

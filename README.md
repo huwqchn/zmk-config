@@ -17,6 +17,7 @@ I'm just getting started with split keyboards and ZMK
 ## Credits
 
 - [urob](https://github.com/urob/zmk-config): timeless home row mods
+- [nickconway](https://github.com/nickconway/zmk-config): tri-state and leader key
 - [infused-kim](https://github.com/infused-kim/zmk-config)
 - [miryoku_zmk](https://github.com/manna-harbour/miryoku_zmk)
 - [folke](https://github.com/folke/zmk-config)
