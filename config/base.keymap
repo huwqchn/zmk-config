@@ -44,8 +44,8 @@
   timerless;
 };
 
-&cap_word {
-  continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+&caps_word {
+ continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
 };
 
 // Alt+Tab swapper, requires PR #1366
