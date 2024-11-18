@@ -51,7 +51,7 @@
     COMBO(lbrc, COMBO_TERM, RM3 RB3, &kp LBRC, BASE)
 
     // }
-    COMBO(lbrc, COMBO_TERM, RM4 RB3, &kp LBRC, BASE)
+    COMBO(rbrc, COMBO_TERM, RM4 RB4, &kp RBRC, BASE)
 
     // (
     COMBO(lpar, COMBO_TERM, RT1 RT2, &kp LPAR, BASE)
