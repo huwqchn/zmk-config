@@ -15,37 +15,38 @@
         bindings = <BINDINGS>; \
         layers = <LAYERS>; \
     };
+/ {
+  leader_sequences {
+    compatible = "zmk,leader-sequences";
 
-leader_sequences {
-  compatible = "zmk,leader-sequences";
+    LEADER(close, LT4, &kp LA(F4), BASE)
+    // mouse
+    LEADER(mouse, LH0, &tog MOUSE, BASE MOUSE)
 
-  LEADER(close, LT4, &kp LA(F4), BASE)
-  // mouse
-  LEADER(mouse, LH0, &tog MOUSE, BASE MOUSE)
-
-  // Greek letters
-  LEADER(el_alpha,   RM2 LM4, &el_alpha,     BASE)  // α
-  LEADER(el_beta,    RM2 LT0, &el_beta,      BASE)  // β
-  LEADER(el_gamma,   RM2 LM0, &el_gamma,     BASE)  // γ
-  LEADER(el_delta,   RM2 LB1, &el_delta,     BASE)  // δ
-  LEADER(el_epsilon, RM2 RM2, &el_epsilon,   BASE)  // ε
-  LEADER(el_zeta,    RM2 LB4, &el_zeta,      BASE)  // ζ
-  LEADER(el_eta,     RM2 RB1, &el_eta,       BASE)  // η
-  LEADER(el_theta,   RM2 LB0, &el_theta,     BASE)  // θ
-  LEADER(el_iota,    RM2 RM3, &el_iota,      BASE)  // ι
-  LEADER(el_kappa,   RM2 RB0, &el_kappa,     BASE)  // κ
-  LEADER(el_lambda,  RM2 RT1, &el_lambda,    BASE)  // λ
-  LEADER(el_mu,      RM2 RM0, &el_mu,        BASE)  // μ
-  LEADER(el_nu,      RM2 RM1, &el_nu,        BASE)  // ν
-  LEADER(el_xi,      RM2 LB3, &el_xi,        BASE)  // ξ
-  LEADER(el_omikron, RM2 RM4, &el_omikron,   BASE)  // ο
-  LEADER(el_pi,      RM2 LT1, &el_pi,        BASE)  // π
-  LEADER(el_rho,     RM2 LM3, &el_rho,       BASE)  // ρ
-  LEADER(el_sigma,   RM2 LM2, &el_sigma,     BASE)  // σ
-  LEADER(el_tau,     RM2 LM1, &el_tau,       BASE)  // τ
-  LEADER(el_upsilon, RM2 RT2, &el_upsilon,   BASE)  // υ
-  LEADER(el_phi,     RM2 LT2, &el_phi,       BASE)  // ϕ
-  LEADER(el_chi,     RM2 LB2, &el_chi,       BASE)  // χ
-  LEADER(el_psi,     RM2 RT3, &el_psi,       BASE)  // ψ
-  LEADER(el_omega,   RM2 LT3, &el_omega,     BASE)  // ω
-}
+    // Greek letters
+    LEADER(el_alpha,   RM2 LM4, &el_alpha,     BASE)  // α
+    LEADER(el_beta,    RM2 LT0, &el_beta,      BASE)  // β
+    LEADER(el_gamma,   RM2 LM0, &el_gamma,     BASE)  // γ
+    LEADER(el_delta,   RM2 LB1, &el_delta,     BASE)  // δ
+    LEADER(el_epsilon, RM2 RM2, &el_epsilon,   BASE)  // ε
+    LEADER(el_zeta,    RM2 LB4, &el_zeta,      BASE)  // ζ
+    LEADER(el_eta,     RM2 RB1, &el_eta,       BASE)  // η
+    LEADER(el_theta,   RM2 LB0, &el_theta,     BASE)  // θ
+    LEADER(el_iota,    RM2 RM3, &el_iota,      BASE)  // ι
+    LEADER(el_kappa,   RM2 RB0, &el_kappa,     BASE)  // κ
+    LEADER(el_lambda,  RM2 RT1, &el_lambda,    BASE)  // λ
+    LEADER(el_mu,      RM2 RM0, &el_mu,        BASE)  // μ
+    LEADER(el_nu,      RM2 RM1, &el_nu,        BASE)  // ν
+    LEADER(el_xi,      RM2 LB3, &el_xi,        BASE)  // ξ
+    LEADER(el_omikron, RM2 RM4, &el_omikron,   BASE)  // ο
+    LEADER(el_pi,      RM2 LT1, &el_pi,        BASE)  // π
+    LEADER(el_rho,     RM2 LM3, &el_rho,       BASE)  // ρ
+    LEADER(el_sigma,   RM2 LM2, &el_sigma,     BASE)  // σ
+    LEADER(el_tau,     RM2 LM1, &el_tau,       BASE)  // τ
+    LEADER(el_upsilon, RM2 RT2, &el_upsilon,   BASE)  // υ
+    LEADER(el_phi,     RM2 LT2, &el_phi,       BASE)  // ϕ
+    LEADER(el_chi,     RM2 LB2, &el_chi,       BASE)  // χ
+    LEADER(el_psi,     RM2 RT3, &el_psi,       BASE)  // ψ
+    LEADER(el_omega,   RM2 LT3, &el_omega,     BASE)  // ω
+  };
+};
