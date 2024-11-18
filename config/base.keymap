@@ -60,6 +60,7 @@ ZMK_TRI_STATE(swap,
 #include "includes/combos.dtsi"
 #include "includes/morphs.dtsi"
 #include "includes/mouse.dtsi"
+#include "includes/leader.dtsi"
 
 / {
   keymap {
