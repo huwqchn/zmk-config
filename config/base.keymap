@@ -41,7 +41,6 @@
 
 &leader {
   timeout-ms = <650>;  // leader key timeout
-  timerless;
 };
 
 &caps_word {
