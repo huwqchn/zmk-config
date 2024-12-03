@@ -7,7 +7,7 @@
   ╰───────────╮ 30  31  32 │ 33  34  35 ╭───────────╯ ╰───────────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────────╯
               ╰────────────┴────────────╯                         ╰─────────────┴─────────────╯             */
 
-#define COMBO_TERM 50
+#define TERM 50
 
 #define COMBO(NAME, TIMEOUT, KEYS, BINDINGS, LAYERS) \
     combo_##NAME { \
@@ -21,70 +21,70 @@
     compatible = "zmk,combos";
 
     // esc
-    COMBO(esc, COMBO_TERM, LT4 LT3, &kp ESC, BASE)  
+    COMBO(esc, TERM, LT4 LT3, &kp ESC, BASE)  
 
     // macro dot spc
-    COMBO(dot_spc, COMBO_TERM, LH1 RH1, &dot_spc, BASE)
+    COMBO(dot_spc, TERM, LH1 RH1, &dot_spc, BASE)
 
     // +
-    COMBO(plus, COMBO_TERM, LT2 LT1, &kp PLUS, BASE)
+    COMBO(plus, TERM, LT2 LT1, &kp PLUS, BASE)
 
     // -
-    COMBO(minus, COMBO_TERM, LT3 LT2, &kp MINUS, BASE)
+    COMBO(minus, TERM, LT3 LT2, &kp MINUS, BASE)
 
     // =
-    COMBO(equal, COMBO_TERM, LB2 LB1, &kp EQUAL, BASE)
+    COMBO(equal, TERM, LB2 LB1, &kp EQUAL, BASE)
 
     // _
-    COMBO(underscore, COMBO_TERM, LB3 LB2, &kp UNDERSCORE, BASE)
+    COMBO(underscore, TERM, LB3 LB2, &kp UNDERSCORE, BASE)
 
     // [
-    COMBO(lbkt, COMBO_TERM, RM1 RB1, &kp LBKT, BASE)
+    COMBO(lbkt, TERM, RM1 RB1, &kp LBKT, BASE)
 
     // ]
-    COMBO(rbkt, COMBO_TERM, RM2 RB2, &kp RBKT, BASE)
+    COMBO(rbkt, TERM, RM2 RB2, &kp RBKT, BASE)
 
     // {
-    COMBO(lbrc, COMBO_TERM, RM3 RB3, &kp LBRC, BASE)
+    COMBO(lbrc, TERM, RM3 RB3, &kp LBRC, BASE)
 
     // }
-    COMBO(rbrc, COMBO_TERM, RM4 RB4, &kp RBRC, BASE)
+    COMBO(rbrc, TERM, RM4 RB4, &kp RBRC, BASE)
 
     // (
-    COMBO(lpar, COMBO_TERM, RT1 RT2, &kp LPAR, BASE)
+    COMBO(lpar, TERM, RT1 RT2, &kp LPAR, BASE)
 
     // )
-    COMBO(rpar, COMBO_TERM, RT2 RT3, &kp RPAR, BASE)
+    COMBO(rpar, TERM, RT2 RT3, &kp RPAR, BASE)
 
     // <
-    COMBO(lt, COMBO_TERM, RB1 RB2, &kp LT, BASE)
+    COMBO(lt, TERM, RB1 RB2, &kp LT, BASE)
 
     // >
-    COMBO(gt, COMBO_TERM, RB2 RB3, &kp GT, BASE)
+    COMBO(gt, TERM, RB2 RB3, &kp GT, BASE)
 
     // @
-    COMBO(AT, COMBO_TERM, LT3 LM3, &kp AT, BASE)
+    COMBO(AT, TERM, LT3 LM3, &kp AT, BASE)
 
     // #
-    COMBO(HASH, COMBO_TERM, LT2 LM2, &kp HASH, BASE)
+    COMBO(HASH, TERM, LT2 LM2, &kp HASH, BASE)
 
     // $
-    COMBO(DOLLAR, COMBO_TERM, LT1 LM1, &kp DOLLAR, BASE)
+    COMBO(DOLLAR, TERM, LT1 LM1, &kp DOLLAR, BASE)
 
     // %
-    COMBO(PERCENT, COMBO_TERM, LT0 LM0, &kp PERCENT, BASE)
+    COMBO(PERCENT, TERM, LT0 LM0, &kp PERCENT, BASE)
 
     // !
-    COMBO(EXCLAMATION, COMBO_TERM, RT0 RM0, &kp EXCLAMATION, BASE)
+    COMBO(EXCLAMATION, TERM, RT0 RM0, &kp EXCLAMATION, BASE)
 
     // ^
-    COMBO(CARET, COMBO_TERM, RT1 RM1, &kp CARET, BASE)
+    COMBO(CARET, TERM, RT1 RM1, &kp CARET, BASE)
 
     // &
-    COMBO(AMP, COMBO_TERM, RT2 RM2, &kp AMPS, BASE)
+    COMBO(AMP, TERM, RT2 RM2, &kp AMPS, BASE)
 
     // *
-    COMBO(ASTERISK, COMBO_TERM, RT3 RM3, &kp STAR, BASE)
+    COMBO(ASTERISK, TERM, RT3 RM3, &kp STAR, BASE)
 
   };
 };

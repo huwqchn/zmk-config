@@ -60,7 +60,7 @@ ZMK_TRI_STATE(swap,
   keymap {
     compatible = "zmk,keymap";
     base_layer {
-      label = "Base";
+      display-name = "Base";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
           _LTX    &kp Q         &kp W         &kp F         &kp P         &kp B                    &kp J         &kp L         &kp U         &kp Y         &kp SQT          _RTX
@@ -75,7 +75,7 @@ ZMK_TRI_STATE(swap,
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
     num_layer {
-      label = "Num";
+      display-name = "Num";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
           _LTX    &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp AT                   &kp PRCNT     &kp LBRC      &kp LPAR      &kp RPAR      &kp RBRC         _RTX
@@ -90,7 +90,7 @@ ZMK_TRI_STATE(swap,
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
     sym_layer {
-      label = "Sym";
+      display-name = "Sym";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
           _LTX    &kp TILDE     &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR                 ___           ___           ___           ___           ___              _RTX
@@ -105,7 +105,7 @@ ZMK_TRI_STATE(swap,
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
     fn_layer {
-      label = "Fn";
+      display-name = "Fn";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
           _LTX    &kp F12       &kp F7        &kp F8        &kp F9        ___                      ___           ___           ___           ___           ___              _RTX
@@ -120,7 +120,7 @@ ZMK_TRI_STATE(swap,
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
     nav_layer {
-      label = "Nav";
+      display-name = "Nav";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
           _LTX    ___           ___           ___           &swap         ___                      &kp K_REDO    &kp K_CUT     &kp K_UNDO    &kp K_COPY    &kp K_PASTE      _RTX
@@ -135,7 +135,7 @@ ZMK_TRI_STATE(swap,
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
     adjust_layer {
-      label = "Adjust";
+      display-name = "Adjust";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
           _LTX    &sys_reset    ___           ___           ___           ___                      ___       &ext_power EP_TOG &kp C_BRI_DN  &kp C_BRI_UP  &sys_reset       _RTX
@@ -150,7 +150,7 @@ ZMK_TRI_STATE(swap,
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
     mouse_layer {
-      label = "Mouse";
+      display-name = "Mouse";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
           _LTX    ___           ___           ___           ___           ___                      ___           U_WH_L        U_WH_D        U_WH_U        U_WH_R           _RTX
