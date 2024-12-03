@@ -21,10 +21,7 @@
     compatible = "zmk,combos";
 
     // esc
-    COMBO(esc, COMBO_TERM, LT4 LT3, &kp ESC, BASE)
-
-    // leader
-    COMBO(leader, COMBO_TERM, LM2 LM1, &leader, BASE MOUSE)
+    COMBO(esc, COMBO_TERM, LT4 LT3, &kp ESC, BASE)  
 
     // macro dot spc
     COMBO(dot_spc, COMBO_TERM, LH1 RH1, &dot_spc, BASE)

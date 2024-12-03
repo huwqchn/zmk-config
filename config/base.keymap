@@ -39,10 +39,6 @@
     ignore-modifiers;          // allow chording sticky mods & layers
 };
 
-&leader {
-  timeout-ms = <650>;  // leader key timeout
-};
-
 &caps_word {
  continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
 };
@@ -59,7 +55,6 @@ ZMK_TRI_STATE(swap,
 #include "includes/combos.dtsi"
 #include "includes/morphs.dtsi"
 #include "includes/mouse.dtsi"
-#include "includes/leader.dtsi"
 
 / {
   keymap {
