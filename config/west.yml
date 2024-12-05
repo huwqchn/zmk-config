@@ -18,30 +18,15 @@
 #
 ---
 manifest:
-  defaults:
-    remote: urob
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
-    - name: urob
-      url-base: https://github.com/urob
+    - name: inorichi
+      url-base: https://github.com/inorichi
   projects:
-    - name: zmk-helpers
-      revision: main
-      path: modules/helpers
-    - name: zmk-auto-layer
-      revision: main
-      path: modules/auto-layer
-    - name: zmk-tri-state
-      revision: main
-      path: modules/tri-state
-    # ZMK with Zephyr namespaced under /zmk. This requires that ZMK imports
-    # Zephyr with a path other than `zephyr` (as in `going-modular`).
     - name: zmk
-      revision: going-modular
-      path: .
-      import:
-        file: app/west.yml
-        path-prefix: zmk
+      remote: zmkfirmware
+      revision: feat/pointers-move-scroll
+      import: app/west.yml
   self:
     path: config

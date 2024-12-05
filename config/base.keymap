@@ -44,10 +44,10 @@
 };
 
 // Alt+Tab swapper, requires PR #1366
-ZMK_TRI_STATE(swap,
-    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-    ignored-key-positions = <LT2>;
-)
+// ZMK_TRI_STATE(swap,
+//    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+//    ignored-key-positions = <LT2>;
+// )
 
 #include "keys/base.h"
 #include "includes/macros.dtsi"
@@ -123,7 +123,7 @@ ZMK_TRI_STATE(swap,
       display-name = "Nav";
       bindings = <
       //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-          _LTX    ___           ___           ___           &swap         ___                      &kp K_REDO    &kp K_CUT     &kp K_UNDO    &kp K_COPY    &kp K_PASTE      _RTX
+          _LTX    ___           ___           ___           ___           ___                      &kp K_REDO    &kp K_CUT     &kp K_UNDO    &kp K_COPY    &kp K_PASTE      _RTX
       //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
           _LMX    &sk LGUI      &sk LALT      &sk LCTRL    &l_shift_morph ___                      &kp CAPS      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT        _RMX
       //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤

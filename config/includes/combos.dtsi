@@ -75,7 +75,7 @@
     COMBO(GRAVE, TERM, LM3 LB3, &kp GRAVE, BASE)
 
     // \
-    COMBO(TEST, TERM, LM2 LB2, &kp A, BASE)
+    COMBO(BSLH, TERM, LM2 LB2, &kp BSLH, BASE)
 
     // =
     COMBO(EQUAL, TERM, LM1 LB1, &kp EQUAL, BASE)
