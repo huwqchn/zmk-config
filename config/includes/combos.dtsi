@@ -20,47 +20,32 @@
   combos {
     compatible = "zmk,combos";
 
-    // esc
-    COMBO(esc, TERM, LT4 LT3, &kp ESC, BASE)  
-
     // macro dot spc
     COMBO(dot_spc, TERM, LH1 RH1, &dot_spc, BASE)
 
-    // +
-    COMBO(plus, TERM, LT2 LT1, &kp PLUS, BASE)
-
-    // -
-    COMBO(minus, TERM, LT3 LT2, &kp MINUS, BASE)
-
-    // =
-    COMBO(equal, TERM, LB2 LB1, &kp EQUAL, BASE)
-
-    // _
-    COMBO(underscore, TERM, LB3 LB2, &kp UNDERSCORE, BASE)
-
-    // [
-    COMBO(lbkt, TERM, RM1 RB1, &kp LBKT, BASE)
-
-    // ]
-    COMBO(rbkt, TERM, RM2 RB2, &kp RBKT, BASE)
-
-    // {
-    COMBO(lbrc, TERM, RM3 RB3, &kp LBRC, BASE)
-
-    // }
-    COMBO(rbrc, TERM, RM4 RB4, &kp RBRC, BASE)
-
     // (
-    COMBO(lpar, TERM, RT1 RT2, &kp LPAR, BASE)
+    COMBO(LPAR, TERM, RT1 RT2, &kp LPAR, BASE)
 
     // )
-    COMBO(rpar, TERM, RT2 RT3, &kp RPAR, BASE)
+    COMBO(RPAR, TERM, RT2 RT3, &kp RPAR, BASE)
 
     // <
-    COMBO(lt, TERM, RB1 RB2, &kp LT, BASE)
+    COMBO(LT, TERM, RB1 RB2, &kp LT, BASE)
 
     // >
-    COMBO(gt, TERM, RB2 RB3, &kp GT, BASE)
+    COMBO(GT, TERM, RB2 RB3, &kp GT, BASE)
+
+    // [
+    COMBO(LBKT, TERM, LT3 LT2, &kp LBKT, BASE)
+
+    // ]
+    COMBO(RBKT, TERM, LT2 LT1, &kp RBKT, BASE)
+
+    // {
+    COMBO(LBRC, TERM, LB3 LB2, &kp LBRC, BASE)
+
+    // }
+    COMBO(RBRC, TERM, LB2 LB1, &kp RBRC, BASE)
 
     // @
     COMBO(AT, TERM, LT3 LM3, &kp AT, BASE)
@@ -74,17 +59,41 @@
     // %
     COMBO(PERCENT, TERM, LT0 LM0, &kp PERCENT, BASE)
 
-    // !
-    COMBO(EXCLAMATION, TERM, RT0 RM0, &kp EXCLAMATION, BASE)
-
     // ^
-    COMBO(CARET, TERM, RT1 RM1, &kp CARET, BASE)
+    COMBO(CARET, TERM, RT0 RM0, &kp CARET, BASE)
 
-    // &
-    COMBO(AMP, TERM, RT2 RM2, &kp AMPS, BASE)
+    // +
+    COMBO(PLUS, TERM, RT1 RM1, &kp PLUS, BASE)
 
     // *
-    COMBO(ASTERISK, TERM, RT3 RM3, &kp STAR, BASE)
+    COMBO(ASTERISK, TERM, RT2 RM2, &kp STAR, BASE)
+
+    // &
+    COMBO(AMP, TERM, RT3 RM3, &kp AMPS, BASE)
+    
+    // `
+    COMBO(GRAVE, TERM, LM3 LB3, &kp GRAVE, BASE)
+
+    // \
+    COMBO(BSLH, TERM, LM2 LB2, &kp BSLH, BASE)
+
+    // =
+    COMBO(EQUAL, TERM, LM1 LB1, &kp EQUAL, BASE)
+
+    // ~
+    COMBO(TILDE, TERM, LM0 LB0, &kp TILDE, BASE)
+
+    // _
+    COMBO(UNDER, TERM, RM0 RB0, &kp UNDER, BASE)
+
+    // -
+    COMBO(MINUS, TERM, RM1 RB1, &kp MINUS, BASE)
+    
+    // /
+    COMBO(FSLH, TERM, RM2 RB2, &kp FSLH, BASE)
+    
+    // |
+    COMBO(PIPE, TERM, RM3 RB3, &kp PIPE, BASE)
 
   };
 };
