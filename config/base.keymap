@@ -11,12 +11,13 @@
   #define _BT_SEL_KEYS_ &trans &trans &trans &trans &trans
 #endif
 #define BASE 0
-#define NUM 1
-#define SYM 2
-#define FN 3
-#define NAV 4
-#define ADJUST 5
-#define MOUSE 6
+#define GAME 1
+#define NUM 2
+#define SYM 3
+#define FN 4
+#define NAV 5
+#define ADJUST 6
+#define MOUSE 7
 
 #define XXX &none
 #define ___ &trans
@@ -60,11 +61,6 @@
 #include "includes/mouse.dtsi"
 
 
-// HACK: make HRM combos tap-only (cf, ZMK issue #544).
-// #define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE)     \
-//   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                           \
-//   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
-
 / {
   keymap {
     compatible = "zmk,keymap";
@@ -79,6 +75,21 @@
           _LBX    &kp Z         &kp X         &kp C         &kp D         &kp V            _MBX    &kp K         &kp H         &comma_morph  &dot_morph    &qmark_morph     _RBX
       //├──────┤ ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯ ├──────┤
           _LHX                               &lt ADJUST ESC &lt NAV SPACE &lt MOUSE TAB            &lt SYM RET   &bspc_morph   &smart_shift FN 0                            _RHX
+      //╰──────╯                             ╰─────────────┴─────────────┴─────────────╯          ╰─────────────┴─────────────┴─────────────╯                             ╰──────╯
+      >;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+    };
+    game_layer {
+      display-name = "Game";
+      bindings = <
+      //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮          ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+          _LTX    ___           ___           ___           ___           ___                      ___           ___           ___           ___           ___              _RTX
+      //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+          _LMX    &kp A         &kp R         &kp S         &kp T         ___                      ___           ___           ___           ___           ___              _RMX
+      //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+          _LBX    &hml LGUI Z   &hml LALT X   &hml LCTRL C  &hml LSHIFT D ___              _MBX    ___           ___           ___           ___           ___              _RBX
+      //├──────┤ ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯ ├──────┤
+          _LHX                                ___           ___           ___                      ___           ___           ___                                          _RHX
       //╰──────╯                             ╰─────────────┴─────────────┴─────────────╯          ╰─────────────┴─────────────┴─────────────╯                             ╰──────╯
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

@@ -21,78 +21,85 @@
     compatible = "zmk,combos";
 
     // macro dot spc
-    COMBO(dot_spc, TERM, LH1 RH1, &dot_spc, BASE)
+    COMBO(dot_spc, TERM, LH1 RH1, &dot_spc, BASE GAME)
 
     // (
-    COMBO(LPAR, TERM, RT1 RT2, &kp LPAR, BASE)
+    COMBO(LPAR, TERM, RT1 RT2, &kp LPAR, BASE GAME)
 
     // )
-    COMBO(RPAR, TERM, RT2 RT3, &kp RPAR, BASE)
+    COMBO(RPAR, TERM, RT2 RT3, &kp RPAR, BASE GAME)
 
     // <
-    COMBO(LT, TERM, RB1 RB2, &kp LT, BASE)
+    COMBO(LT, TERM, RB1 RB2, &kp LT, BASE GAME)
 
     // >
-    COMBO(GT, TERM, RB2 RB3, &kp GT, BASE)
+    COMBO(GT, TERM, RB2 RB3, &kp GT, BASE GAME)
 
     // [
-    COMBO(LBKT, TERM, LT3 LT2, &kp LBKT, BASE)
+    COMBO(LBKT, TERM, LT3 LT2, &kp LBKT, BASE GAME)
 
     // ]
-    COMBO(RBKT, TERM, LT2 LT1, &kp RBKT, BASE)
+    COMBO(RBKT, TERM, LT2 LT1, &kp RBKT, BASE GAME)
 
     // {
-    COMBO(LBRC, TERM, LB3 LB2, &kp LBRC, BASE)
+    COMBO(LBRC, TERM, LB3 LB2, &kp LBRC, BASE GAME)
 
     // }
-    COMBO(RBRC, TERM, LB2 LB1, &kp RBRC, BASE)
+    COMBO(RBRC, TERM, LB2 LB1, &kp RBRC, BASE GAME)
 
     // @
-    COMBO(AT, TERM, LT3 LM3, &kp AT, BASE)
+    COMBO(AT, TERM, LT3 LM3, &kp AT, BASE GAME)
 
     // #
-    COMBO(HASH, TERM, LT2 LM2, &kp HASH, BASE)
+    COMBO(HASH, TERM, LT2 LM2, &kp HASH, BASE GAME)
 
     // $
-    COMBO(DOLLAR, TERM, LT1 LM1, &kp DOLLAR, BASE)
+    COMBO(DOLLAR, TERM, LT1 LM1, &kp DOLLAR, BASE GAME)
 
     // %
-    COMBO(PERCENT, TERM, LT0 LM0, &kp PERCENT, BASE)
+    COMBO(PERCENT, TERM, LT0 LM0, &kp PERCENT, BASE GAME)
 
     // ^
-    COMBO(CARET, TERM, RT0 RM0, &kp CARET, BASE)
+    COMBO(CARET, TERM, RT0 RM0, &kp CARET, BASE GAME)
 
     // +
-    COMBO(PLUS, TERM, RT1 RM1, &kp PLUS, BASE)
+    COMBO(PLUS, TERM, RT1 RM1, &kp PLUS, BASE GAME)
 
     // *
-    COMBO(ASTERISK, TERM, RT2 RM2, &kp STAR, BASE)
+    COMBO(ASTERISK, TERM, RT2 RM2, &kp STAR, BASE GAME)
 
     // &
-    COMBO(AMP, TERM, RT3 RM3, &kp AMPS, BASE)
-    
-    // `
-    COMBO(GRAVE, TERM, LM3 LB3, &kp GRAVE, BASE)
+    COMBO(AMP, TERM, RT3 RM3, &kp AMPS, BASE GAME)
 
-    COMBO(BSLH, TERM, LM2 LB2, &kp BSLH, BASE)
+    // `
+    COMBO(GRAVE, TERM, LM3 LB3, &kp GRAVE, BASE GAME)
+
+    COMBO(BSLH, TERM, LM2 LB2, &kp BSLH, BASE GAME)
 
     // =
-    COMBO(EQUAL, TERM, LM1 LB1, &kp EQUAL, BASE)
+    COMBO(EQUAL, TERM, LM1 LB1, &kp EQUAL, BASE GAME)
 
     // ~
-    COMBO(TILDE, TERM, LM0 LB0, &kp TILDE, BASE)
+    COMBO(TILDE, TERM, LM0 LB0, &kp TILDE, BASE GAME)
 
     // _
-    COMBO(UNDER, TERM, RM0 RB0, &kp UNDER, BASE)
+    COMBO(UNDER, TERM, RM0 RB0, &kp UNDER, BASE GAME)
 
     // -
-    COMBO(MINUS, TERM, RM1 RB1, &kp MINUS, BASE)
-    
-    // /
-    COMBO(FSLH, TERM, RM2 RB2, &kp FSLH, BASE)
-    
-    // |
-    COMBO(PIPE, TERM, RM3 RB3, &kp PIPE, BASE)
+    COMBO(MINUS, TERM, RM1 RB1, &kp MINUS, BASE GAME)
 
+    // /
+    COMBO(FSLH, TERM, RM2 RB2, &kp FSLH, BASE GAME)
+
+    // |
+    COMBO(PIPE, TERM, RM3 RB3, &kp PIPE, BASE GAME)
+
+    // toggle game mode
+    COMBO(TOG_GAME, TERM, LT4 LM4 LB4, &tog GAME, BASE GAME)
+
+    // mouse
+    COMBO(LCLK, TERM, RM1 RM2, &mkp LCLK, BASE GAME)
+    COMBO(RCLK, TERM, RM2 RM3, &mkp RCLK, BASE GAME)
+    COMBO(MCLK, TERM, RM1 RM3, &mkp MCLK, BASE GAME)
   };
 };
