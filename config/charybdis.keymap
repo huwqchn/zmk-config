@@ -54,7 +54,6 @@
 //    ignored-key-positions = <LT2>;
 // )
 
-#include "keys/base.h"
 #include "includes/macros.dtsi"
 #include "includes/mods.dtsi"
 #include "includes/combos.dtsi"
