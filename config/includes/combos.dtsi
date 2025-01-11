@@ -6,7 +6,6 @@
   │ 20  21  22  23  24     │     25  26  27  28  29 │ │ LB4 LB3 LB2 LB1 LB0     │     RB0 RB1 RB2 RB3 RB4 │
   ╰───────────╮ 30  31  32 │ 33  34  35 ╭───────────╯ ╰───────────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────────╯
               ╰────────────┴────────────╯                         ╰─────────────┴─────────────╯             */
-#include "mouse.dtsi"
 #define TERM 50
 
 #define COMBO(NAME, TIMEOUT, KEYS, BINDINGS, LAYERS) \
@@ -98,8 +97,8 @@
     COMBO(TOG_GAME, TERM, LT4 LM4 LB4, &tog GAME, BASE GAME)
 
     // mouse
-    COMBO(LCLK, TERM, RM1 RM2, &mkp LCLK, BASE GAME)
-    COMBO(RCLK, TERM, RM2 RM3, &mkp RCLK, BASE GAME)
-    COMBO(MCLK, TERM, RM1 RM3, &mkp MCLK, BASE GAME)
+    COMBO(LCLK, TERM, RT3 RT4, &mkp LCLK, BASE GAME)
+    COMBO(RCLK, TERM, RM3 RM4, &mkp RCLK, BASE GAME)
+    COMBO(MCLK, TERM, RB3 RB4, &mkp MCLK, BASE GAME)
   };
 };
