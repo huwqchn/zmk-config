@@ -6,7 +6,7 @@
   │ 20  21  22  23  24     │     25  26  27  28  29 │ │ LB4 LB3 LB2 LB1 LB0     │     RB0 RB1 RB2 RB3 RB4 │
   ╰───────────╮ 30  31  32 │ 33  34  35 ╭───────────╯ ╰───────────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────────╯
               ╰────────────┴────────────╯                         ╰─────────────┴─────────────╯             */
-
+#include "mouse.dtsi"
 #define TERM 50
 
 #define COMBO(NAME, TIMEOUT, KEYS, BINDINGS, LAYERS) \
