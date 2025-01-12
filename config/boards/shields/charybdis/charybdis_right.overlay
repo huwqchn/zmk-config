@@ -60,7 +60,6 @@
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
          /*   optional features   */
         automouse-layer = <7>;
-        automouse-layer-timeout-ms = <200>;
         scroll-layers = <5>;
         snipe-layers = <4>;
     };
