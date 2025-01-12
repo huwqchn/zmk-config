@@ -96,6 +96,8 @@
 
     // toggle game mode
     COMBO(TOG_GAME, TERM, LT4 LM4 LB4, &tog GAME, BASE GAME)
+    // toggle base no morph for macos
+    COMBO(TOG_BASE_NO_MORPH, TERM, RT4 RM4 RB4, &tog BASE_NO_MORPH, BASE BASE_NO_MORPH)
 
     // mouse
     // COMBO(LCLK, TERM, RT3 RT4, &mkp LCLK, BASE GAME)
