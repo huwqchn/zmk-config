@@ -10,6 +10,13 @@
 #else
   #define _BT_SEL_KEYS_ &trans &trans &trans &trans &trans
 #endif
+#ifdef CONFIG_ZMK_RGB_UNDERGLOW
+  #include <dt-bindings/zmk/rgb.h>
+  #define _RGB_KEYS_
+    &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_EFF &rgb_ug RGB_TOG
+#else
+  #define _RGB_KEYS_ &trans &trans &trans &trans
+#endif
 #define BASE 0
 #define GAME 1
 #define NUM 2
@@ -162,7 +169,7 @@
       //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
           _LMX    ___           ___           ___           ___           &bootloader              &bootloader   &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  ___              _RMX
       //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-          _LBX    ___           ___           ___           ___           &sys_reset       _MBX    &sys_reset    &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    ___              _RBX
+          _LBX                                _RGB_KEYS_                  &sys_reset       _MBX    &sys_reset    &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    ___              _RBX
       //├──────┤ ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤          ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯ ├──────┤
           _LHX                                ___           ___           ___                      &kp C_PP      &kp C_PREV    &kp C_NEXT                                   _RHX
       //╰──────╯                             ╰─────────────┴─────────────┴─────────────╯          ╰─────────────┴─────────────┴─────────────╯                             ╰──────╯
